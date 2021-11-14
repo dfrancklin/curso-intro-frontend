@@ -5,103 +5,136 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>BLOG</title>
+
+		<link rel="stylesheet" href="style.css" />
 	</head>
 
 	<body>
 		<!-- PAGE -->
 		<div id="page">
-			<header>
+			<header class="header">
 				<!-- CONTAINER -->
-				<div>
-					<!-- BRAND -->
-					<div>
-						<a href="/">BLOG</a>
+				<div class="container">
+					<!-- HEADER CONTENT -->
+					<div class="header__content">
+						<!-- BRAND -->
+						<div class="brand">
+							<h1 class="brand__name">
+								<a href="/">BLOG</a>
+							</h1>
+						</div>
+
+						<!-- SITE NAVIGATION -->
+						<nav class="header__nav" aria-label="Site navigation">
+							<!-- MENU -->
+							<ul class="header__menu">
+								<li><a href="/">HOME</a></li>
+								<li><a href="/about.html">ABOUT</a></li>
+								<li><a href="#">MENU 1</a></li>
+								<li><a href="#">MENU 2</a></li>
+								<li><a href="#">MENU 3</a></li>
+							</ul>
+
+							<!-- ACTIONS -->
+							<ul class="header__actions">
+								<li>
+									<a href="#">
+										<!-- SR ONLY -->
+										<span class="sr-only">LOGIN</span>
+										<i class="bi-person"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<!-- SR ONLY -->
+										<span class="sr-only">SEARCH</span>
+										<i class="bi-search"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<!-- SR ONLY -->
+										<span class="sr-only">MENU</span>
+										<i class="bi-list"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
-
-					<!-- SITE NAVIGATION -->
-					<nav>
-						<!-- MENU -->
-						<ul>
-							<li><a href="/">HOME</a></li>
-							<li><a href="/about.html">ABOUT</a></li>
-							<li><a href="#">MENU 1</a></li>
-							<li><a href="#">MENU 2</a></li>
-							<li><a href="#">MENU 3</a></li>
-						</ul>
-
-						<!-- ACTIONS -->
-						<ul>
-							<li><a href="#">LOGIN</a></li>
-							<li><a href="#">SEARCH</a></li>
-						</ul>
-					</nav>
 				</div>
 			</header>
 
 			<!-- MAIN -->
 			<main>
 				<!-- CONTAINER -->
-				<div>
+				<div class="container">
 					<!-- HERO SECTION -->
-					<div>
+					<div class="hero">
 						<!-- HERO BG -->
-						<div>
-							<img
-								src="https://picsum.photos/id/1020/1600/800"
-								alt=""
-							/>
-						</div>
+						<div
+							class="hero__bg"
+							style="
+								background: url('https://picsum.photos/1600/800')
+									no-repeat center center/cover #000;
+							"
+						></div>
 
 						<!-- HERO CONTENT -->
-						<div>
+						<div class="hero__content">
 							<!-- HERO INNER -->
-							<div>
+							<div class="hero__inner">
 								<!-- HERO WRAPPER -->
-								<div>
-									<h2>Lorem ipsum dolor sit amet.</h2>
-									<p>
+								<div class="hero__wrapper">
+									<h2 class="hero__title">Lorem ips</h2>
+
+									<p class="hero__text">
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Laudantium quidem sed
 										velit maxime amet ea nesciunt laborum
 										porro harum maiores?
 									</p>
-									<p>
-										<a href="#">Subscribe</a>
-									</p>
+
+									<a href="#" class="hero__button button">
+										Subscribe
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<!-- POST GRID -->
-					<div>
+					<div class="post-grid">
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/815/500"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -113,39 +146,43 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/815/500"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -157,39 +194,43 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/1600/800"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -201,39 +242,43 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/815/500"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -245,39 +290,43 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/815/500"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -289,39 +338,43 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 
 						<!-- POST GRID ITEM -->
-						<article>
+						<article class="post-item">
 							<!-- POST INNER -->
-							<div>
+							<div class="post-item__inner">
 								<!-- POST BG -->
-								<img
-									src="https://picsum.photos/id/1076/1600/800"
-									alt=""
-								/>
+								<div
+									class="post-item__bg"
+									style="
+										background: url('https://picsum.photos/1600/800')
+											no-repeat center center/cover #000;
+									"
+								></div>
+
 								<!-- POST HEADER -->
-								<header>
+								<header class="post-item__header">
 									<!-- TAGS -->
-									<div>
+									<div class="post-item__tags">
 										<a href="#">Lorem.</a>
 									</div>
 
 									<!-- POST TITLE -->
-									<h2>
+									<h2 class="post-item__title">
 										<a href="#"
 											>Lorem ipsum dolor sit amet
 											consectetur.</a
 										>
 									</h2>
 									<!-- POST META -->
-									<div>
+									<div class="post-item__meta">
 										By
-										<span>
+										<span class="post-item__authors">
 											<a href="#">Lorem Ipsum</a>,
 											<a href="#">Lorem Ipsum Dolor</a>
 										</span>
@@ -333,37 +386,37 @@
 								</header>
 
 								<!-- READ MORE -->
-								<div>
+								<div class="post-item__button button">
 									<a href="#">Read More</a>
 								</div>
 							</div>
 						</article>
 					</div>
 
-					<!-- NAVIGATION -->
-					<nav>
-						<a href="#">
+					<!-- PAGINATION -->
+					<nav class="pagination">
+						<a href="#" class="pagination__new">
 							<!-- SR ONLY -->
-							<span>Newest Posts</span>
+							<span class="sr-only">Newest Posts</span>
 							<!-- ARROW LEFT ICON -->
-							<span></span>
+							<i class="bi-chevron-left"></i>
 						</a>
 
 						<!-- PAGE NUMBER -->
 						<span>Page 1 of 3</span>
 
-						<a href="#">
+						<a href="#" class="pagination__old">
 							<!-- SR ONLY -->
-							<span>Older Posts</span>
+							<span class="sr-only">Older Posts</span>
 							<!-- ARROW RIGHT ICON -->
-							<span></span>
+							<i class="bi-chevron-right"></i>
 						</a>
 					</nav>
 				</div>
 			</main>
 
 			<!-- HIDDEN SIDE BAR -->
-			<aside>
+			<aside class="side-bar">
 				<!-- INNER SIDE BAR -->
 				<div>
 					<!-- HIDE SIDE BUTTON -->
@@ -449,7 +502,7 @@
 			</aside>
 
 			<!-- HIDDEN SEARCH BAR -->
-			<section>
+			<section class="search-bar">
 				<!-- INNER SEARCH BAR -->
 				<div>
 					<!-- HIDE SEARCH BUTTON -->
@@ -463,17 +516,17 @@
 						<!-- SEARCH BOX INNER -->
 						<div>
 							<!-- SR ONLY -->
-							<h2>Search blog</h2>
+							<h2 class="sr-only">Search blog</h2>
 
 							<!-- SEARCH FORM -->
 							<form action="#">
 								<!-- SR ONLY -->
-								<label></label>
+								<label class="sr-only"></label>
 
 								<input type="text" />
 
 								<!-- SR ONLY -->
-								<button>Search</button>
+								<button class="sr-only">Search</button>
 							</form>
 
 							<!-- SEARCH RESULTS INFO -->
@@ -488,26 +541,32 @@
 			</section>
 
 			<!-- FOOTER WIDGETS -->
-			<aside>
+			<aside class="footer-widgets">
 				<!-- CONTAINER -->
-				<div>
+				<div class="container">
 					<!-- WIDGETS -->
-					<div>
+					<div class="widgets">
 						<!-- COLUMN -->
-						<div>
+						<div class="widgets__col">
 							<!-- LATEST POSTS -->
-							<section>
+							<section class="widget widget-recent-posts">
 								<!-- LATEST POSTS TITLE -->
-								<h2>LATEST POSTS</h2>
+								<h2 class="widget__title">LATEST POSTS</h2>
 
 								<!-- LATEST POSTS LIST -->
-								<ul>
+								<ul class="widget-recent-posts__list">
 									<!-- LATEST POST ITEM -->
-									<li>
+									<li class="widget-recent-posts__item">
 										<!-- ITEM HEADER -->
-										<div>
+										<div
+											class="widget-recent-posts__header"
+										>
 											<!-- ITEM TITLE -->
-											<h3>
+											<h3
+												class="
+													widget-recent-posts__title
+												"
+											>
 												<a href="#"
 													>Lorem ipsum dolor sit amet
 													consectetur adipisicing
@@ -516,7 +575,11 @@
 											</h3>
 
 											<!-- ITEM META -->
-											<div>
+											<div
+												class="
+													widget-recent-posts__meta
+												"
+											>
 												<time datetime="2021-12-04"
 													>04 de dezembro de
 													2021</time
@@ -525,7 +588,10 @@
 										</div>
 
 										<!-- ITEM THUMB -->
-										<a href="#">
+										<a
+											class="widget-recent-posts__thumb"
+											href="#"
+										>
 											<img
 												src="https://picsum.photos/id/1060/80/60"
 												alt=""
@@ -533,11 +599,17 @@
 										</a>
 									</li>
 									<!-- LATEST POST ITEM -->
-									<li>
+									<li class="widget-recent-posts__item">
 										<!-- ITEM HEADER -->
-										<div>
+										<div
+											class="widget-recent-posts__header"
+										>
 											<!-- ITEM TITLE -->
-											<h3>
+											<h3
+												class="
+													widget-recent-posts__title
+												"
+											>
 												<a href="#"
 													>Lorem ipsum dolor sit amet
 													consectetur adipisicing
@@ -546,7 +618,11 @@
 											</h3>
 
 											<!-- ITEM META -->
-											<div>
+											<div
+												class="
+													widget-recent-posts__meta
+												"
+											>
 												<time datetime="2021-12-04"
 													>04 de dezembro de
 													2021</time
@@ -555,7 +631,10 @@
 										</div>
 
 										<!-- ITEM THUMB -->
-										<a href="#">
+										<a
+											class="widget-recent-posts__thumb"
+											href="#"
+										>
 											<img
 												src="https://picsum.photos/id/1060/80/60"
 												alt=""
@@ -563,11 +642,17 @@
 										</a>
 									</li>
 									<!-- LATEST POST ITEM -->
-									<li>
+									<li class="widget-recent-posts__item">
 										<!-- ITEM HEADER -->
-										<div>
+										<div
+											class="widget-recent-posts__header"
+										>
 											<!-- ITEM TITLE -->
-											<h3>
+											<h3
+												class="
+													widget-recent-posts__title
+												"
+											>
 												<a href="#"
 													>Lorem ipsum dolor sit amet
 													consectetur adipisicing
@@ -576,7 +661,11 @@
 											</h3>
 
 											<!-- ITEM META -->
-											<div>
+											<div
+												class="
+													widget-recent-posts__meta
+												"
+											>
 												<time datetime="2021-12-04"
 													>04 de dezembro de
 													2021</time
@@ -585,7 +674,10 @@
 										</div>
 
 										<!-- ITEM THUMB -->
-										<a href="#">
+										<a
+											class="widget-recent-posts__thumb"
+											href="#"
+										>
 											<img
 												src="https://picsum.photos/id/1060/80/60"
 												alt=""
@@ -593,11 +685,17 @@
 										</a>
 									</li>
 									<!-- LATEST POST ITEM -->
-									<li>
+									<li class="widget-recent-posts__item">
 										<!-- ITEM HEADER -->
-										<div>
+										<div
+											class="widget-recent-posts__header"
+										>
 											<!-- ITEM TITLE -->
-											<h3>
+											<h3
+												class="
+													widget-recent-posts__title
+												"
+											>
 												<a href="#"
 													>Lorem ipsum dolor sit amet
 													consectetur adipisicing
@@ -606,7 +704,11 @@
 											</h3>
 
 											<!-- ITEM META -->
-											<div>
+											<div
+												class="
+													widget-recent-posts__meta
+												"
+											>
 												<time datetime="2021-12-04"
 													>04 de dezembro de
 													2021</time
@@ -615,7 +717,10 @@
 										</div>
 
 										<!-- ITEM THUMB -->
-										<a href="#">
+										<a
+											class="widget-recent-posts__thumb"
+											href="#"
+										>
 											<img
 												src="https://picsum.photos/id/1060/80/60"
 												alt=""
@@ -627,25 +732,39 @@
 						</div>
 
 						<!-- COLUMN -->
-						<div>
+						<div class="widgets__col">
 							<!-- TAGS -->
-							<section>
+							<section class="widget widget-tags">
 								<!-- TAGS TITLE -->
-								<h2>LATEST POSTS</h2>
+								<h2 class="widget__title">LATEST POSTS</h2>
 
 								<!-- TAG CLOUD -->
-								<div>
-									<a href="#">Lorem.</a>
-									<a href="#">Lorem, ipsum.</a>
-									<a href="#">Lorem, ipsum dolor.</a>
-									<a href="#">Lorem ipsum dolor sit.</a>
-									<a href="#">Lorem ipsum dolor sit amet.</a>
-									<a href="#">
+								<div class="tag-cloud">
+									<a class="tag-cloud__item" href="#"
+										>Lorem.</a
+									>
+									<a class="tag-cloud__item" href="#"
+										>Lorem, ipsum.</a
+									>
+									<a class="tag-cloud__item" href="#"
+										>Lorem, ipsum dolor.</a
+									>
+									<a class="tag-cloud__item" href="#"
+										>Lorem ipsum dolor sit.</a
+									>
+									<a class="tag-cloud__item" href="#"
+										>Lorem ipsum dolor sit amet.</a
+									>
+									<a class="tag-cloud__item" href="#">
 										Lorem ipsum dolor sit amet consectetur.
 									</a>
-									<a href="#">Lorem ipsum dolor sit amet.</a>
-									<a href="#">Lorem ipsum dolor sit. </a>
-									<a href="#">
+									<a class="tag-cloud__item" href="#"
+										>Lorem ipsum dolor sit amet.</a
+									>
+									<a class="tag-cloud__item" href="#"
+										>Lorem ipsum dolor sit.
+									</a>
+									<a class="tag-cloud__item" href="#">
 										Lorem ipsum dolor. Possimus.
 									</a>
 								</div>
@@ -656,58 +775,89 @@
 			</aside>
 
 			<!-- FOOTER -->
-			<footer>
+			<footer class="footer">
 				<!-- CONTAINER -->
-				<div>
+				<div class="container">
 					<!-- FOOTER INNER -->
-					<div>
-						<!-- FOOTER INFO -->
-						<div>
-							<a href="#">BRAND</a> &copy; 2021 <br />
-							Blog theme by
-							<a href="https://herocode.dev">HERO CODE</a>
+					<div class="footer__inner">
+						<!-- FOOTER LINKS -->
+						<div class="footer__links">
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-twitter"> </i>
+							</a>
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-facebook"> </i>
+							</a>
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-instagram"> </i>
+							</a>
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-linkedin"> </i>
+							</a>
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-github"> </i>
+							</a>
+							<!-- LINK -->
+							<a
+								class="footer__link"
+								href="#"
+								target="_blank"
+								rel="noopener"
+							>
+								<!-- LINK ICON -->
+								<i class="bi-rss"> </i>
+							</a>
 						</div>
 
-						<!-- FOOTER LINKS -->
-						<div>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
-							<!-- LINK -->
-							<a href="#" target="_blank" rel="noopener">
-								<!-- LINK ICON -->
-								<span> </span>
-							</a>
+						<!-- FOOTER INFO -->
+						<div class="site-info">
+							<a href="#">BRAND</a> &copy; 2021 <br />
+							Visit
+							<a href="https://herocode.dev">HERO CODE</a> to
+							learn how to sites like this
 						</div>
 
 						<!-- GO TO TOP LINK -->
-						<a href="#page">
+						<a id="top-link" href="#page">
 							<!-- SR ONLY -->
-							<span>Back to top</span>
+							<span class="sr-only">Back to top</span>
 							<!-- ARROW UP ICON -->
-							<span></span>
+							<i class="bi-chevron-up"></i>
 						</a>
 					</div>
 				</div>
