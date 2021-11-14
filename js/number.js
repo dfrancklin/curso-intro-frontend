@@ -1,0 +1,32 @@
+const number1 = 200;
+const number2 = 9007199254740991; // 2^53 - 1
+const number3 = 3.1415;
+const number4 = Number.NaN;
+const number5 = "10,33";
+const number6 = Infinity;
+const number7 = -Infinity;
+const number8 = new Number("   10");
+const number9 = new Number("   10,33");
+
+console.log(number1);
+console.log(number2);
+console.log(number3);
+console.log(number4, typeof number4);
+console.log(number5);
+console.log(number6);
+console.log(number7);
+console.log(number8, typeof number8, typeof number8.valueOf());
+console.log(number9, typeof number9, typeof number9.valueOf());
+console.log(isNaN(number1));
+console.log(isNaN(number5));
+console.log((10).toString());
+console.log(number1.toString());
+console.log(number2.toExponential());
+console.log(number2.toExponential(2));
+console.log(number1.toFixed(3));
+console.log(number3.toFixed(3));
+console.log(number1.toPrecision(4));
+console.log(number1.toPrecision(2));
+console.log(number3.toPrecision(3));
+console.log("10", parseInt("10"), parseFloat("10.0"));
+console.log("10.33", parseInt("10.33"), parseFloat("10.33"));
