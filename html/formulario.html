@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário</title>
+	</head>
+	<body>
+		<form>
+			<div>
+				<label for="nome">Nome</label>
+				<input
+					type="text"
+					name="nome"
+					id="nome"
+					value="Diego"
+					required
+					autofocus
+				/>
+				<br />
+				<br />
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					value="diego@herocode.dev"
+					required
+				/>
+				<br />
+				<br />
+			</div>
+			<div>
+				<input
+					type="radio"
+					name="genero"
+					id="masculino"
+					value="masculino"
+				/>
+				<label for="masculino">Masculino</label>
+				<input
+					type="radio"
+					name="genero"
+					id="feminino"
+					value="feminino"
+				/>
+				<label for="feminino">Feminino</label>
+				<br />
+				<br />
+			</div>
+
+			<div>
+				<label for="nascimento">Data de nascimento</label>
+				<input type="date" name="nascimento" id="nascimento" />
+				<br />
+				<br />
+			</div>
+
+			<div>
+				<label for="idade">Idade</label>
+				<input type="number" name="idade" id="idade" step=".5" />
+				<br />
+				<br />
+			</div>
+
+			<div>
+				<label for="Cidade">Cidade</label>
+				<select name="cidade" id="cidade" required>
+					<option value="">Selecione uma cidade</option>
+					<option value="Sorocaba">Sorocaba</option>
+					<option value="São Paulo" selected>São Paulo</option>
+					<option value="Florianópolis">Florianópolis</option>
+				</select>
+				<br />
+				<br />
+			</div>
+
+			<div>
+				<label for="bio">Biografia</label>
+				<textarea name="bio" id="bio" cols="80" rows="10">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat mollitia, minus magnam in aliquam illo fugit blanditiis, rerum tempora sint saepe voluptate labore voluptates aspernatur quo corporis veritatis delectus unde!</textarea
+				>
+				<br />
+				<br />
+			</div>
+
+			<div>
+				<input
+					type="checkbox"
+					name="concorda"
+					id="concorda"
+					value="sim"
+					checked
+				/>
+				<label for="concorda">Concorda com os termos?</label>
+				<br />
+				<br />
+			</div>
+
+			<button type="submit">Enviar formulário</button>
+		</form>
+	</body>
+</html>
