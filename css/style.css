@@ -1,0 +1,127 @@
+/*SITUAÇÕES MAIS BÁSICAS*/
+
+* {
+} /* todos */
+
+p {
+}
+
+.class {
+}
+
+#id {
+}
+
+p.lead {
+}
+
+input#name {
+}
+
+/*SITUAÇÕES MAIS ESPECÍFICAS*/
+
+[disabled] {
+} /* elementos que possuem o atributo disabled */
+
+[title="Tooltip"] {
+} /* elementos que possuem o atributo title e que o valor é Tooltip */
+
+[title~="Tooltip"] {
+} /* contém a palavra */
+
+[title|="Tool"] {
+} /* contém com a palavra */
+
+[title*="Tool"] {
+} /* começa com a palavra (inteira) */
+
+[href^="https"] {
+} /* começa com a palavra */
+
+[href$=".pdf"] {
+} /* termina com a palavra */
+
+/*SELECIONAR ELEMENTOS RELACIONADOS*/
+
+article p {
+} /* aplica estilo para qualquer descendente */
+
+article > p {
+} /* aplica estilo descendentes imediatos */
+
+p + span {
+} /* aplica estilo a irmãos subsequentes imediatos */
+
+p ~ span {
+} /* aplica estilo a irmãos subsequentes */
+
+/*PSEUDO-CLASSES*/
+
+button:hover {
+} /* quando o ponteiro do mouse está em cima do elemento */
+
+button:focus {
+} /* quando o elemento está com o foco */
+
+button:active {
+} /* quando o botão do mouse está pressionado em cima do elemento */
+
+button:disabled {
+} /* quando o elemento está desativado */
+
+input:valid {
+} /* quando o valor do campo é válido */
+
+input:invalid {
+} /* quando o valor do campo não é válido */
+
+input:required {
+} /* quando o valor do campo é obrigatório */
+
+.menu li:nth-child(2n + 1) {
+} /* n-ézimo filho do elemento */
+
+.menu li:first-child {
+} /* primeiro filho do elemento */
+
+.menu li:last-child {
+} /* último filho do elemento */
+
+/* PSEUDO-ELEMENT */
+
+p::before {
+}
+
+p::after {
+}
+
+/*PRECEDÊNCIA*/
+
+/* do menos específico para o mais específico */
+
+/* ordem de declaração */
+
+p {
+}
+
+p.gray-text {
+}
+
+p#main {
+}
+
+p#main {
+}
+
+/* ... */
+
+/* ... */
+/* ... */
+
+/* ... */
+/* ... */
+
+/* ... */
+
+p {
+}
